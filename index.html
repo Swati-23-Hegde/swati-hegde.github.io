@@ -3,230 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Swati Hegde · Portfolio (Data Analytics & Statistics)</title>
-  <meta name="description" content="Swati Hegde — MSc Statistics. Data Analytics & Statistics projects in SQL, Python, R, Power BI, and Time Series." />
+  <title>Swati Hegde · Portfolio</title>
+  <meta name="description" content="Portfolio of Swati Hegde – MSc Statistics Graduate. Open to Data Analyst, Statistician, and statistics-related roles." />
   <style>
-    :root{
-      --bg:#0b1220; --card:#111a2e; --muted:#9fb0d1; --text:#e6eefc;
-      --accent:#4da3ff; --accent2:#8b5cf6; --border:#1f2a44; --chip:#17233b;
-    }
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Noto Sans',Helvetica,Arial;color:var(--text);background:linear-gradient(180deg,#0a1020 0%, #0b1220 100%);}
-    .container{max-width:1100px;margin:0 auto;padding:0 18px}
-    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(11,18,32,.7);border-bottom:1px solid var(--border);z-index:20}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .avatar{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid var(--border)}
-    .title{font-weight:800}
-    .links a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
-    .links a:hover{color:var(--text)}
-    .menu-btn{display:none;border:1px solid var(--border);background:transparent;color:var(--text);padding:6px 10px;border-radius:10px}
-    @media (max-width:820px){.links{display:none}.menu-btn{display:inline-flex}.mobile{display:none;flex-direction:column;gap:10px;padding:12px 0}.mobile a{margin:0}}
-    .hero{padding:64px 0 32px;border-bottom:1px solid var(--border)}
-    .headline{font-size:clamp(28px,4vw,40px);font-weight:900;line-height:1.1;margin:8px 0}
-    .sub{color:var(--muted);font-size:clamp(14px,2.2vw,18px)}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;font-weight:700;text-decoration:none;border:1px solid var(--border)}
-    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none}
-    section{padding:42px 0;border-bottom:1px solid var(--border)}
-    h2{font-size:clamp(22px,3vw,28px);margin:0 0 18px}
-    p{line-height:1.6}
-    .grid{display:grid;gap:18px}
-    .grid.projects{grid-template-columns:repeat(3,1fr)}
-    .grid.two{grid-template-columns:repeat(2,1fr)}
-    @media (max-width:980px){.grid.projects{grid-template-columns:repeat(2,1fr)}.grid.two{grid-template-columns:1fr}}
-    @media (max-width:640px){.grid.projects{grid-template-columns:1fr}}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
-    .card h3{margin:0 0 8px;font-size:18px}
-    .muted{color:var(--muted)}
-    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
-    .chip{background:var(--chip);color:var(--muted);border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-size:13px;font-weight:600}
-    .project-img{width:100%;height:180px;object-fit:cover;border-radius:12px;border:1px solid var(--border);margin-bottom:10px;background:#0b1426}
-    .list{margin:0;padding-left:18px}
-    footer{padding:26px 0;color:var(--muted)}
-    a.inline{color:var(--accent);text-decoration:none}
-    a.inline:hover{text-decoration:underline}
+    body { margin:0; font-family:Arial, sans-serif; background:#0a0f1a; color:#e6eefc; line-height:1.6; }
+    a { color:#4da3ff; text-decoration:none; }
+    header { background:#0d1629; padding:15px; position:sticky; top:0; z-index:10; border-bottom:1px solid #1f2a44; }
+    header nav a { margin:0 12px; color:#9fb0d1; font-weight:600; }
+    header nav a:hover { color:#fff; }
+    .container { max-width:1100px; margin:auto; padding:20px; }
+    h1,h2 { color:#fff; margin-bottom:12px; }
+    .btn { padding:10px 15px; margin:5px; display:inline-block; background:#4da3ff; border-radius:6px; color:#fff; font-weight:bold; transition:0.3s; }
+    .btn:hover { background:#3579c9; }
+    .card { background:#111a2e; padding:20px; margin:15px 0; border-radius:10px; border:1px solid #1f2a44; box-shadow:0 2px 6px rgba(0,0,0,0.3); }
+    .grid { display:grid; gap:20px; }
+    .projects { grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); }
+    .projects img, .certifications img { width:100%; border-radius:8px; margin-bottom:10px; border:1px solid #1f2a44; }
+    footer { text-align:center; padding:20px; color:#9fb0d1; border-top:1px solid #1f2a44; }
+    .contact-icons { display:flex; gap:20px; flex-wrap:wrap; }
+    .contact-icons a { display:flex; align-items:center; gap:8px; color:#e6eefc; background:#111a2e; padding:10px 15px; border-radius:8px; border:1px solid #1f2a44; transition:0.3s; }
+    .contact-icons a:hover { background:#1a2440; }
+    .contact-icons img { width:20px; height:20px; }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand">
-        <img class="avatar" src="https://avatars.githubusercontent.com/u/0?v=4" alt="Avatar">
-        <div class="title">Swati Hegde</div>
-      </div>
-      <div class="links" id="links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#certs">Certifications</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <button class="menu-btn" id="menuBtn">Menu</button>
-    </div>
-    <div class="container mobile" id="mobileLinks">
+<header>
+  <div class="container">
+    <h2>Swati Hegde</h2>
+    <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#certs">Certifications</a>
+      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <h1>Hi, I’m Swati Hegde — MSc Statistics Graduate</h1>
+  <p>MSc in Statistics. I turn raw data into insights using <b>SQL</b>, <b>Python</b>, <b>Power BI</b>, <b>R</b>, and advanced statistical modeling. Open to <b>Data Analyst</b>, <b>Statistician</b>, and other statistics-related roles (internships & full-time).</p>
+  <a class="btn" href="#projects">View Projects</a>
+  <a class="btn" href="Swati_Hegde_Resume.pdf" target="_blank">Download CV</a>
+  <a class="btn" href="https://topmate.io/swati_hegde11" target="_blank">Topmate</a>
+  <a class="btn" href="https://github.com/Swati-23-Hegde" target="_blank">GitHub</a>
+  <a class="btn" href="https://www.linkedin.com/in/swatihegde123" target="_blank">LinkedIn</a>
+</section>
+
+<section id="about" class="container">
+  <h2>About</h2>
+  <div class="card">
+    <p>MSc Statistics graduate and Data Analytics Intern with experience in dashboards, forecasting models, and applying statistical methods to solve problems. Built projects in Power BI, R, and Python covering market analysis, dashboards, and NLP classification. Passionate about data storytelling and evidence-based decision making.</p>
+  </div>
+</section>
+
+<section id="skills" class="container">
+  <h2>Skills</h2>
+  <div class="card">
+    <p><b>Programming & Tools:</b> Python, R, SQL, Excel, Power BI, Power Query</p>
+    <p><b>Statistics:</b> Hypothesis Testing, Regression, ARIMA, Time Series Forecasting</p>
+    <p><b>Visualization:</b> Power BI Dashboards, Looker Studio, EDA</p>
+  </div>
+</section>
+
+<section id="experience" class="container">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>UptoSkills – Data Analytics Intern (Feb 2025 – May 2025)</h3>
+    <ul>
+      <li>Analyzed higher education data from 100,000+ colleges across India to identify trends.</li>
+      <li>Cleaned data with ETL operations using Excel & Power Query.</li>
+      <li>Built 3+ Power BI dashboards enabling district/state-level insights.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="container">
+  <h2>Projects</h2>
+  <div class="grid projects">
+    <div class="card">
+      <img src="images/bookstore.png" alt="Online Bookstore Dashboard">
+      <h3>Online Bookstore Dashboard</h3>
+      <p>Power BI dashboard with DAX & SQL analyzing revenue (₹75.63K), 2,697 books, and 307 customers. Features drill-down and repeat customer insights.</p>
+      <a href="https://github.com/Swati-23-Hegde/Online-Bookstore-Dashboard" target="_blank">View Project</a>
     </div>
-  </header>
-
-  <main>
-    <section class="hero container">
-      <div class="muted">Hi, I’m</div>
-      <h1 class="headline">Swati Hegde — Data Analytics & Statistics</h1>
-      <p class="sub">
-        MSc in Statistics. I turn raw data into clear insights using <strong>SQL</strong>, <strong>Python</strong>, <strong>Power BI</strong>, and <strong>R</strong>, with strengths in statistical modeling and time-series. 
-        Open to roles such as <strong>Data Analyst</strong>, <strong>Statistician</strong>, and other statistics-related positions (internships & full-time).
-      </p>
-      <div class="cta">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn" href="resume.pdf" download>Download CV</a>
-        <a class="btn" href="https://github.com/Swati-23-Hegde" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/swatihegde123" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://topmate.io/swati_hegde11" target="_blank" rel="noopener">Topmate</a>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <h2>About</h2>
-        <div class="grid two">
-          <div class="card">
-            <p>
-              MSc Statistics graduate with hands-on experience in data cleaning, analysis, visualization,
-              and statistical modeling using Excel, SQL, Python, and R. Comfortable extracting insights from real-world datasets through internships and projects; passionate about solving problems with data.
-            </p>
-            <p class="muted">Based in Uttara Kannada, Karnataka · Open to opportunities in Bengaluru & remote.</p>
-          </div>
-          <div class="card">
-            <h3>Education</h3>
-            <p><strong>MSc (Statistics)</strong> — Karnatak University, Dharwad (CGPA 7.12)</p>
-            <h3 style="margin-top:14px">Domains</h3>
-            <p class="muted">Financial/Equity Markets, Market Behaviour, Economic Indicators</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="chips">
-          <span class="chip">SQL</span><span class="chip">Python</span><span class="chip">R</span>
-          <span class="chip">Excel & Power Query</span><span class="chip">Power BI (DAX)</span>
-          <span class="chip">ETL Processes</span><span class="chip">EDA</span>
-          <span class="chip">Statistical Modeling</span><span class="chip">Hypothesis Testing</span>
-          <span class="chip">Regression</span><span class="chip">Time Series (ARIMA)</span>
-          <span class="chip">Data Visualization</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="grid two">
-          <div class="card">
-            <h3>Data Analytics Intern — UptoSkills <span class="muted">(Feb 2025 – May 2025)</span></h3>
-            <ul class="list">
-              <li>Analyzed higher-education data from 100k+ colleges across India; uncovered trends by course, institution type & gender.</li>
-              <li>Built ETL with Excel & Power Query; prepared structured datasets and BI reports.</li>
-              <li>Created 3+ interactive Power BI dashboards (state/district breakdowns, course diversity, public vs private comparisons).</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Foundations of AI — Microsoft & Edunet (AICTE)</h3>
-            <p class="muted">Introductory internship/learning program covering AI/ML/GenAI fundamentals and mini-projects.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="grid projects">
-
-          <!-- Project 1 -->
-          <div class="card">
-            <img class="project-img" src="images/bookstore_dashboard.png" alt="Online Bookstore Power BI Dashboard">
-            <h3>Online Bookstore BI Analytics Dashboard</h3>
-            <p class="muted">
-              Power BI + DAX dashboard on PostgreSQL datasets (₹75.63K revenue, 2,697 books, 307 customers).
-              Tracks KPIs, genre trends, repeat customer rate (45.28%), and low-stock alerts.
-            </p>
-            <div class="chips"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query</span><span class="chip">SQL</span></div>
-            <p><a class="inline" href="https://github.com/Swati-23-Hegde/Online-Bookstore-Dashboard" target="_blank">Repository / details →</a></p>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="card">
-            <img class="project-img" src="images/equity_arima.png" alt="Equity Market ARIMA">
-            <h3>Statistical Analysis on Global & Indian Equity Market</h3>
-            <p class="muted">
-              Time-series forecasting in R using ARIMA. Performed EDA, decomposition, ADF stationarity checks; best result for Infosys (MAPE ≈ 6.55%).
-            </p>
-            <div class="chips"><span class="chip">R</span><span class="chip">ARIMA</span><span class="chip">Time Series</span></div>
-            <!-- Add your repo link when available -->
-          </div>
-
-          <!-- Project 3 (placeholder/example) -->
-          <div class="card">
-            <img class="project-img" src="images/eda_dashboard.png" alt="EDA / Analytics">
-            <h3>Exploratory Data Analysis Portfolio</h3>
-            <p class="muted">Curated EDA notebooks and visualizations demonstrating data cleaning, feature engineering, and insight storytelling.</p>
-            <div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">Visualization</span></div>
-            <p><a class="inline" href="https://github.com/Swati-23-Hegde" target="_blank">Browse notebooks →</a></p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="certs">
-      <div class="container">
-        <h2>Certifications</h2>
-        <div class="card">
-          <ul class="list">
-            <li><a class="inline" href="https://www.coursera.org/account/accomplishments/specialization/M2RMW1RADQ66" target="_blank">IBM Data Analyst — Coursera (Specialization)</a></li>
-            <li><a class="inline" href="https://github.com/Swati-23-Hegde/Certificates/blob/main/SQL%20Certificate.pdf" target="_blank">30-Days SQL Micro Course — Skill Course (Credential)</a></li>
-            <li><a class="inline" href="https://github.com/Swati-23-Hegde/Certificates/blob/main/Power%20BI%20Certificate.pdf" target="_blank">30-Days Power BI Micro Course — Skill Course (Credential)</a></li>
-            <li><a class="inline" href="https://github.com/Swati-23-Hegde/Certificates/blob/main/Tata%20Data%20Visualization%20Certificate.pdf" target="_blank">Tata Data Visualization: Empowering Business with Insights</a></li>
-            <li><a class="inline" href="https://github.com/Swati-23-Hegde/Certificates/blob/main/certificate%20(1).pdf" target="_blank">Foundations of AI — Microsoft & Edunet (AICTE)</a></li>
-            <li><a class="inline" href="https://github.com/Swati-23-Hegde/Certificates/blob/main/Swati%20hegde.pdf" target="_blank">Consolidated Certificates (PDF)</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <div class="card">
-          <p>📧 <a class="inline" href="mailto:hegdeswati23@gmail.com">hegdeswati23@gmail.com</a> · 📱 +91-6362204511</p>
-          <p>GitHub: <a class="inline" href="https://github.com/Swati-23-Hegde" target="_blank">github.com/Swati-23-Hegde</a></p>
-          <p>LinkedIn: <a class="inline" href="https://www.linkedin.com/in/swatihegde123" target="_blank">linkedin.com/in/swatihegde123</a></p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      © <span id="year"></span> Swati Hegde · Built with GitHub Pages
+    <div class="card">
+      <img src="images/stock.png" alt="Equity Market Forecasting">
+      <h3>Equity Market Forecasting (ARIMA)</h3>
+      <p>ARIMA forecasting on Indian & global tech stocks using R. EDA, decomposition, ADF stationarity, with Infosys achieving MAPE 6.55%.</p>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script>
-    const btn = document.getElementById('menuBtn');
-    const mobile = document.getElementById('mobileLinks');
-    btn?.addEventListener('click',()=>{ mobile.style.display = getComputedStyle(mobile).display!=='none' ? 'none' : 'flex'; });
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<section id="certifications" class="container">
+  <h2>Certifications</h2>
+  <div class="grid certifications">
+    <div class="card">
+      <img src="images/sql_cert.png" alt="SQL Certificate">
+      <p><a href="https://github.com/Swati-23-Hegde/Certificates/blob/main/SQL%20Certificate.pdf" target="_blank">30-Days SQL Micro Course</a></p>
+    </div>
+    <div class="card">
+      <img src="images/powerbi_cert.png" alt="Power BI Certificate">
+      <p><a href="https://github.com/Swati-23-Hegde/Certificates/blob/main/Power%20BI%20Certificate.pdf" target="_blank">30-Days Power BI Micro Course</a></p>
+    </div>
+    <div class="card">
+      <img src="images/tata_cert.png" alt="Tata Visualization Certificate">
+      <p><a href="https://github.com/Swati-23-Hegde/Certificates/blob/main/Tata%20Data%20Visualization%20Certificate.pdf" target="_blank">Tata Data Visualization</a></p>
+    </div>
+    <div class="card">
+      <img src="images/ibm_cert.png" alt="IBM Data Analyst Coursera">
+      <p><a href="https://www.coursera.org/account/accomplishments/specialization/M2RMW1RADQ66" target="_blank">IBM Data Analyst (Coursera)</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h2>Contact</h2>
+  <div class="contact-icons">
+    <a href="mailto:hegdeswati23@gmail.com" target="_blank"><img src="images/email.png" alt="Email">Email</a>
+    <a href="https://www.linkedin.com/in/swatihegde123" target="_blank"><img src="images/linkedin.png" alt="LinkedIn">LinkedIn</a>
+    <a href="https://github.com/Swati-23-Hegde" target="_blank"><img src="images/github.png" alt="GitHub">GitHub</a>
+    <a href="https://topmate.io/swati_hegde11" target="_blank"><img src="images/topmate.png" alt="Topmate">Topmate</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Swati Hegde · Built with GitHub Pages</p>
+</footer>
 </body>
 </html>
