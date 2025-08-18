@@ -6,21 +6,23 @@
   <title>Swati Hegde · Portfolio</title>
   <meta name="description" content="Portfolio of Swati Hegde – MSc Statistics Graduate. Open to Data Analyst, Statistician, and statistics-related roles." />
   <style>
-    body { margin:0; font-family:Arial, sans-serif; background:#f9f9f9; color:#333; }
-    a { color:#0073e6; text-decoration:none; }
-    header { background:#fff; padding:15px; position:sticky; top:0; border-bottom:1px solid #ddd; }
-    header nav a { margin:0 12px; color:#333; font-weight:bold; }
-    header nav a:hover { color:#0073e6; }
-    .container { max-width:1000px; margin:auto; padding:20px; }
-    h1,h2 { color:#222; }
-    .btn { padding:8px 12px; margin:5px; display:inline-block; background:#0073e6; border-radius:4px; color:#fff; font-weight:bold; }
-    .card { background:#fff; padding:20px; margin:15px 0; border-radius:6px; border:1px solid #ddd; }
+    body { margin:0; font-family:Arial, sans-serif; background:#0b1220; color:#e6eefc; line-height:1.6; }
+    a { color:#4da3ff; text-decoration:none; }
+    header { background:#111a2e; padding:15px; position:sticky; top:0; border-bottom:1px solid #1f2a44; z-index:10; }
+    header nav a { margin:0 12px; color:#9fb0d1; font-weight:600; }
+    header nav a:hover { color:#fff; }
+    .container { max-width:1100px; margin:auto; padding:20px; }
+    h1,h2 { color:#fff; margin-bottom:12px; }
+    .btn { padding:10px 15px; margin:5px; display:inline-block; background:#4da3ff; border-radius:6px; color:#fff; font-weight:bold; transition:0.3s; }
+    .btn:hover { background:#3579c9; }
+    .card { background:#111a2e; padding:20px; margin:15px 0; border-radius:10px; border:1px solid #1f2a44; box-shadow:0 2px 6px rgba(0,0,0,0.3); }
     .grid { display:grid; gap:20px; }
     .projects { grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); }
-    .projects img { width:100%; border-radius:6px; margin-bottom:10px; }
-    footer { text-align:center; padding:20px; color:#666; border-top:1px solid #ddd; }
+    .projects img { width:100%; border-radius:8px; margin-bottom:10px; }
+    footer { text-align:center; padding:20px; color:#9fb0d1; border-top:1px solid #1f2a44; }
     .icon { width:20px; vertical-align:middle; margin-right:8px; }
-    .profile-pic { width:130px; height:130px; border-radius:50%; border:3px solid #0073e6; margin-bottom:15px; }
+    .profile-header { display:flex; align-items:center; gap:25px; margin-bottom:20px; }
+    .profile-pic { width:130px; height:130px; border-radius:50%; border:3px solid #4da3ff; }
     ul { margin:0; padding-left:20px; }
   </style>
 </head>
@@ -39,12 +41,16 @@
   </div>
 </header>
 
-<section class="container" style="text-align:center;">
-  <img src="images/profile.jpg" alt="Swati Hegde" class="profile-pic">
-  <h1>Hi, I’m Swati Hegde — MSc Statistics Graduate</h1>
-  <p>MSc in Statistics with strong skills in <b>SQL</b>, <b>Python</b>, <b>Power BI</b>, <b>R</b>, and statistical modeling. Open to <b>Data Analyst</b>, <b>Statistician</b>, and other statistics-related roles (internships & full-time).</p>
-  <a class="btn" href="#projects">View Projects</a>
-  <a class="btn" href="Swati_Hegde_Resume.pdf" target="_blank">Download CV</a>
+<section class="container">
+  <div class="profile-header">
+    <img src="images/profile.jpg" alt="Swati Hegde" class="profile-pic">
+    <div>
+      <h1>Hi, I’m Swati Hegde — MSc Statistics Graduate</h1>
+      <p>MSc in Statistics with strong skills in <b>SQL</b>, <b>Python</b>, <b>Power BI</b>, <b>R</b>, and statistical modeling. Open to <b>Data Analyst</b>, <b>Statistician</b>, and other statistics-related roles (internships & full-time).</p>
+      <a class="btn" href="#projects">View Projects</a>
+      <a class="btn" href="Swati_Hegde_Resume.pdf" target="_blank">Download CV</a>
+    </div>
+  </div>
 </section>
 
 <section id="about" class="container">
@@ -75,7 +81,7 @@
     <h3>UptoSkills – Data Analytics Intern (Feb 2025 – May 2025)</h3>
     <ul>
       <li>Performed data cleaning and ETL operations on higher education datasets with 100,000+ records using Excel and Power Query.</li>
-      <li>Designed and built 3+ interactive Power BI dashboards to deliver actionable insights at state and district levels.</li>
+      <li>Designed and built 3 interactive Power BI dashboards to deliver actionable insights at state and district levels.</li>
       <li>Applied statistical analysis and trend identification to improve understanding of enrollment and performance data.</li>
       <li>Presented findings through visual storytelling, improving stakeholder engagement and decision-making.</li>
       <li>Collaborated with cross-functional teams to ensure accuracy, consistency, and usability of dashboards.</li>
