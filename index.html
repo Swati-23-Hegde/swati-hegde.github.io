@@ -110,33 +110,110 @@
 
 <section id="certifications" class="container">
   <h2>Certifications</h2>
-  <div class="grid certifications">
-    <div class="card">
-      <a href="https://github.com/Swati-23-Hegde/Certificates/blob/main/SQL%20Certificate.pdf" target="_blank">
-        <img src="images/sql_cert.png" alt="SQL Certificate">
-      </a>
-      <p>30-Days SQL Micro Course</p>
+  <div class="grid projects">
+
+    <!-- SQL -->
+    <div class="card" style="text-align:center;">
+      <img src="images/sql_cert.png" alt="SQL Certificate" width="220" onclick="openModal('sqlModal')">
+      <p>SQL Micro Course</p>
     </div>
-    <div class="card">
-      <a href="https://github.com/Swati-23-Hegde/Certificates/blob/main/Power%20BI%20Certificate.pdf" target="_blank">
-        <img src="images/powerbi_cert.png" alt="Power BI Certificate">
-      </a>
-      <p>30-Days Power BI Micro Course</p>
+
+    <!-- Power BI -->
+    <div class="card" style="text-align:center;">
+      <img src="images/powerbi_cert.png" alt="Power BI Certificate" width="220" onclick="openModal('powerbiModal')">
+      <p>Power BI Micro Course</p>
     </div>
-    <div class="card">
-      <a href="https://github.com/Swati-23-Hegde/Certificates/blob/main/Tata%20Data%20Visualization%20Certificate.pdf" target="_blank">
-        <img src="images/tata_cert.png" alt="Tata Data Visualization Certificate">
-      </a>
+
+    <!-- Tata -->
+    <div class="card" style="text-align:center;">
+      <img src="images/tata_cert.png" alt="Tata Certificate" width="220" onclick="openModal('tataModal')">
       <p>Tata Data Visualization</p>
     </div>
-    <div class="card">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/M2RMW1RADQ66" target="_blank">
-        <img src="images/ibm_cert.png" alt="IBM Data Analyst">
-      </a>
+
+    <!-- IBM -->
+    <div class="card" style="text-align:center;">
+      <img src="images/ibm_cert.png" alt="IBM Certificate" width="220" onclick="openModal('ibmModal')">
       <p>IBM Data Analyst (Coursera)</p>
     </div>
+
+    <!-- AINSI -->
+    <div class="card" style="text-align:center;">
+      <img src="images/ainsi_cert.png" alt="AINSI Certificate" width="220" onclick="openModal('ainsiModal')">
+      <p>AINSI Internship Certification</p>
+    </div>
+
   </div>
 </section>
+
+<!-- Modals -->
+<div id="sqlModal" class="modal">
+  <span class="close" onclick="closeModal('sqlModal')">&times;</span>
+  <img class="modal-content" src="images/sql_cert.png" alt="SQL Certificate">
+  <div class="caption">
+    <a href="https://github.com/Swati-23-Hegde/Certificates/blob/main/SQL%20Certificate.pdf" target="_blank">View Full Certificate</a>
+  </div>
+</div>
+
+<div id="powerbiModal" class="modal">
+  <span class="close" onclick="closeModal('powerbiModal')">&times;</span>
+  <img class="modal-content" src="images/powerbi_cert.png" alt="Power BI Certificate">
+  <div class="caption">
+    <a href="https://github.com/Swati-23-Hegde/Certificates/blob/main/Power%20BI%20Certificate.pdf" target="_blank">View Full Certificate</a>
+  </div>
+</div>
+
+<div id="tataModal" class="modal">
+  <span class="close" onclick="closeModal('tataModal')">&times;</span>
+  <img class="modal-content" src="images/tata_cert.png" alt="Tata Certificate">
+  <div class="caption">
+    <a href="https://github.com/Swati-23-Hegde/Certificates/blob/main/Tata%20Data%20Visualization%20Certificate.pdf" target="_blank">View Full Certificate</a>
+  </div>
+</div>
+
+<div id="ibmModal" class="modal">
+  <span class="close" onclick="closeModal('ibmModal')">&times;</span>
+  <img class="modal-content" src="images/ibm_cert.png" alt="IBM Certificate">
+  <div class="caption">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/M2RMW1RADQ66" target="_blank">View Full Certificate</a>
+  </div>
+</div>
+
+<div id="ainsiModal" class="modal">
+  <span class="close" onclick="closeModal('ainsiModal')">&times;</span>
+  <img class="modal-content" src="images/ainsi_cert.png" alt="AINSI Certificate">
+  <div class="caption">
+    <a href="https://github.com/Swati-23-Hegde/Certificates/blob/main/AINSI%20Certificate.pdf" target="_blank">View Full Certificate</a>
+  </div>
+</div>
+
+<!-- Modal Styles -->
+<style>
+.modal {
+  display:none; position:fixed; z-index:1; padding-top:100px;
+  left:0; top:0; width:100%; height:100%;
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  display:block; margin:auto; max-width:80%; border-radius:8px;
+}
+.close {
+  position:absolute; top:50px; right:80px; color:#fff; font-size:40px; cursor:pointer;
+}
+.caption {
+  text-align:center; color:#ccc; padding:10px;
+}
+</style>
+
+<!-- Modal Script -->
+<script>
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+</script>
+
 
 <section id="languages" class="container">
   <h2>Languages</h2>
